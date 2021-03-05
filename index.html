@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>個人履歷</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#point1").click(function () {
+          $("#photo1").fadeIn();
+          $("#photo2").fadeOut();
+          $("#photo3").fadeOut();
+
+          $("#point1").css("background-color", "lightseagreen");
+          $("#point2").css("background-color", "white");
+          $("#point3").css("background-color", "white");
+        });
+
+        $("#point2").click(function () {
+          $("#photo2").fadeIn();
+          $("#photo1").fadeOut();
+          $("#photo3").fadeOut();
+
+          $("#point2").css("background-color", "lightseagreen");
+          $("#point1").css("background-color", "white");
+          $("#point3").css("background-color", "white");
+        });
+
+        $("#point3").click(function () {
+          $("#photo3").fadeIn();
+          $("#photo2").fadeOut();
+          $("#photo1").fadeOut();
+
+          $("#point3").css("background-color", "lightseagreen");
+          $("#point2").css("background-color", "white");
+          $("#point1").css("background-color", "white");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="card">
+      <div id="photo">
+        <img src="photo-1.jpg" width="238" height="244" id="photo1" />
+        <img src="photo-2.jpg" width="238" height="244" id="photo2" />
+        <img src="photo-3.jpg" width="238" height="244" id="photo3" />
+        <div class="point" id="point1"></div>
+        <div class="point" id="point2"></div>
+        <div class="point" id="point3"></div>
+      </div>
+      <div id="intro">
+        <h1>徐銘谷</h1>
+        <h2>29 歲</h2>
+        <h2>前端導師</h2>
+        <h2>台北</h2>
+        <h3>站在風口上，連豬都能飛</h3>
+      </div>
+      <div id="about">
+        <h4><i class="fas fa-user-circle"></i> 關於我</h4>
+        <p>
+          大家好，我是谷哥，物理系畢業之後，透過自學與不斷的練習進而轉往前端工程師發展，熟悉網頁前端技術與框架，曾經擔任
+          iThome 舉辦的 Modern Web 講者，目前任職 AppWorks School
+          導師，致力於程式教學以協助新手學習程式。
+        </p>
+        <h4>工作經歷</h4>
+        <ul>
+          <li>前端導師</li>
+          <li>前端工程師</li>
+          <li>全端工程師</li>
+        </ul>
+        <h4>社群連結</h4>
+        <ul>
+          <li><a href="https://www.Facebook.com">Facebook</a></li>
+          <li>Linkedin</li>
+          <li>Instagram</li>
+        </ul>
+      </div>
+      <div id="other">
+        <h4>個性</h4>
+        <div class="block">
+          <div class="left-text">內向</div>
+          <div class="right-text">外向</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar1"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">理性</div>
+          <div class="right-text">感性</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">警慎</div>
+          <div class="right-text">冒險</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">思考</div>
+          <div class="right-text">行動</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar"></div>
+        </div>
+        <h4>技能</h4>
+        <div class="block">
+          <div class="left-text">HTML</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar5"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">CSS</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">JavaScript</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">ReactJS</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
